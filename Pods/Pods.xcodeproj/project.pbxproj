@@ -1,0 +1,1371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0624C2EE63C8785A57BA90887951C49E /* Regift.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0A6F7642373DA0127E88BB6F0F80E5 /* Regift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CA589B1B2A22C0349DE9C5F32C69F1B /* AVAssetImageGeneratorTimePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9BCB4B126DC95D0AC027BCF0FCA854 /* AVAssetImageGeneratorTimePoints.swift */; };
+		0D572B1B41B9F7E3A6A3A57AE229F48F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78CA657705034A36D5E591AB70FC11B /* Foundation.framework */; };
+		13ADE84F672E4DF94AB419484FFAEAFA /* FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F5E9852F9EEB735D6B2B99D030AC /* FLAnimatedImage-dummy.m */; };
+		163DEFC11FEC2A8F71990079093EB790 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78CA657705034A36D5E591AB70FC11B /* Foundation.framework */; };
+		1A0A8DB7807A114A3ADC08B8651F2C40 /* UIView+YGCFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A1C32FCB1801A9686F52EDD0885764 /* UIView+YGCFrameUtil.m */; };
+		1BD28665B76986E6C76089DAE4061C79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5881BE25BD532350089967F4943AD075 /* QuartzCore.framework */; };
+		1C117024C40ED8B805D55981B294D87E /* YGCTrimVideoView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DC68717D49666879538A12BE2F1CDE /* YGCTrimVideoView-dummy.m */; };
+		1CF60861C292B136E93544C381B4F3A4 /* YGCTrimVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BB6487D9C415B01AB08CB8A167841 /* YGCTrimVideoView.m */; };
+		1F8C7BE384C73E81914E40624CB0CCEE /* Pods-GifCreator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4180EEDDDD4CD95E1E5543E73C4C6EDF /* Pods-GifCreator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23E99EC651B0407397308E6B8D66B400 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A07976CE8A7A7D58FC4F1114D6CFD1 /* ImageIO.framework */; };
+		243BBD4420774ACEF3EAD7D3E8245BD9 /* ThumbSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8959A418BB635676A10AD0DF5A75043 /* ThumbSelectorView.swift */; };
+		31BF0C4D6502E42EC2DFD030560EE034 /* PryntTrimmerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE20B9F8F54819C4ED02DACC14D2914 /* PryntTrimmerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		325ADD5B11E8B7E12B1DEEB25D6C7B59 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04706125C8A0A604077EE9295788BE2 /* AVFoundation.framework */; };
+		54B72BE8851E881007E5620B47F98A89 /* FLAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0622C47E9875566FE854146A333D783 /* FLAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D3A5F60432BA22E13304939571E3637 /* YGCTrimVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = AE977A7C4AF2BB364E6304D02D8CB21E /* YGCTrimVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DC8C13B108C9BB872801AB07A520D0D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A07976CE8A7A7D58FC4F1114D6CFD1 /* ImageIO.framework */; };
+		64E3F56E00F929AB1F4C0D86CFB18741 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083E930B77D2E3FE0340CB8C76DB8DDC /* MobileCoreServices.framework */; };
+		6B7BEE3E70BEF40E9249B6F5309AEB7B /* AVAssetTimeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBCFEC3946FEB72409AC4DEEC9B8AB6 /* AVAssetTimeSelector.swift */; };
+		6C89FC1B37765617135683297EC75C3E /* YGCThumbCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D969F36B7564BF835A0ADE8844A1DBD /* YGCThumbCollectionViewCell.m */; };
+		6F47231C1610791876AC4FB22110539D /* UIView+YGCFrameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 67FE6E7A34138A8CD0479506C4FAE311 /* UIView+YGCFrameUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB9EC68E4B9247D20965D6D99F8CEA0 /* GIFGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6ED79FAFAE7BD836B584E7A35252613 /* GIFGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		879F3C72BF6A5122BA70CAEEDDC5B845 /* FLAnimatedImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF4983F8DDB355BDDB92F60AB07CA2A /* FLAnimatedImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87CD9D328EC49DC3703F5C1A99E83C44 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083E930B77D2E3FE0340CB8C76DB8DDC /* MobileCoreServices.framework */; };
+		880333098FAE9636741918302ABE0B8E /* Regift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B1CC06FAFDB73F2F9D359E5F45BB06 /* Regift-dummy.m */; };
+		89D94938B76680EB356DD8171BF4DD29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78CA657705034A36D5E591AB70FC11B /* Foundation.framework */; };
+		8A1F982792673A3CDCD9AB15C81698EA /* defaultImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7537538368DD14DAE643F003431ADBFE /* defaultImage.bundle */; };
+		8C1771BECC0DA6C28D8EB206F8D62D67 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A05DFCF100691CA8DC4278098FDB897 /* FLAnimatedImage.m */; };
+		8D18B7826585577C7B8417BD41455F72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78CA657705034A36D5E591AB70FC11B /* Foundation.framework */; };
+		902EC308F131A0C71DDBE0F03D6EE2BE /* YGCTrimVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 969C300D3CA46ACE3B556066DE5635E9 /* YGCTrimVideoControlView.m */; };
+		94B654B7B0F9D67089E75A16318264D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78CA657705034A36D5E591AB70FC11B /* Foundation.framework */; };
+		9FF0B6616F553347487E2D964EBCF944 /* PryntTrimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BD25505BE303C76EFF8D3A6C6ED91E /* PryntTrimmerView.swift */; };
+		A1AA9A88D7AB4CC20D810D952BCEDDA2 /* GIFGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DBE4AB89A9C1034302029E2DCAD3F8 /* GIFGenerator-dummy.m */; };
+		A276929FC928CAC1473C48DA3B5B2FF3 /* Pods-GifCreator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C21C3B5A366D10E860C437EA5BFC8 /* Pods-GifCreator-dummy.m */; };
+		A5051EFD353CEAB809168C245495BD40 /* YGCTrimVideoControlView.h in Headers */ = {isa = PBXBuildFile; fileRef = 814034B08C708535E8314CF88EE4AA00 /* YGCTrimVideoControlView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACEF52D266CBF9E8C7E9F7D5E2C0937A /* FLAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B1021F3744F9AB6D59C9531DCD4A3C /* FLAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B03438F853B352A1EF764120FBD76109 /* UIImage+BundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED646146605CA672CF099568F8C79B /* UIImage+BundleImage.m */; };
+		B15EC92250F8C64024821EB7D563866F /* YGCTrimVideoView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05340DF530418B7483168E21C19C270D /* YGCTrimVideoView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6533EFF69AA9E2AB73837FD8950F1C8 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB64FDB009D952F112269B760099D946 /* FLAnimatedImageView.m */; };
+		BC20F2EFACAF86940A2B16CFC3E3ABB3 /* HandlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C37B94B45B210456A19B1A84CEBFA /* HandlerView.swift */; };
+		BCA159980725EA65AEE92CFAC6391B96 /* YGCThumbCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE9C6A13C416AF178F704D4D8B3AFEC /* YGCThumbCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7A97BA1D8A2DDA4DDC4DF7C2878F6B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5254B5FF830F78AAEF5CBBB7C7E3F014 /* CoreGraphics.framework */; };
+		CC9853D67453ECCD27480C197339298B /* Regift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA8C175855C304130BC9CB544827F30 /* Regift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCC323BA6A4A873DED618185152ECB70 /* CropMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A09815B1B12D77BAF2F5DDD6DC236 /* CropMaskView.swift */; };
+		CF3EA62AF4A41F26208E685B13C28F56 /* VideoCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6FDA7DB54DF0BD9B207EC002D9C348 /* VideoCropView.swift */; };
+		D112211A428D4D90FB919CBB752C5033 /* GIFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666FE9E24CB53917E3721795D44912E /* GIFGenerator.swift */; };
+		D2E827ADEB965900A338232319FB3126 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78CA657705034A36D5E591AB70FC11B /* Foundation.framework */; };
+		E1F51904D12232D74DCAFB6F1CF39D0E /* PryntTrimmerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2009D7C16ED11811A32AD3BA2F80738C /* PryntTrimmerView-dummy.m */; };
+		E2BB960CC80802E3E7D47910E81E636B /* VideoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064051AB1F88E44C020D232C6A8B3A8 /* VideoScrollView.swift */; };
+		E79229E4CE0D2BBBBF97B555D429CFB3 /* Regift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4563F9DCF5B25F0284DFF6B744127D /* Regift.swift */; };
+		F2B69B1D3187FD9D517106D93280D334 /* AssetVideoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CEF5825FB2802C65A4EC0053A8C512 /* AssetVideoScrollView.swift */; };
+		F9D3B4C1E379052E937203BE92BEA90C /* UIImage+BundleImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B5590112F3B6C9096DD4D281B1E3612 /* UIImage+BundleImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01E2689367D5BBE1BDC094145D697CE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06E4EFF2D5B8A270CA33829C042CC3FC;
+			remoteInfo = PryntTrimmerView;
+		};
+		1A6FEBE9A0283E7902B4C5CC1CADC81F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A87637FAD92BE631EFE8C0135BD708C;
+			remoteInfo = Regift;
+		};
+		21ACFD267E93EC2C686FDE81F5790CBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50804F7BAF0A67A18DA62FDFB991182A;
+			remoteInfo = GIFGenerator;
+		};
+		31957D5ACD5B6FB1DEB84436319B6E20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8BFDA67BFEB8EBE87BB107216BA78D;
+			remoteInfo = YGCTrimVideoView;
+		};
+		681B08EC42BD4BF11B8E79BE8BA9CD25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B5B60C676A8D31829A6AE91CE86A75;
+			remoteInfo = FLAnimatedImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05340DF530418B7483168E21C19C270D /* YGCTrimVideoView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YGCTrimVideoView-umbrella.h"; sourceTree = "<group>"; };
+		083E930B77D2E3FE0340CB8C76DB8DDC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		09CFCDD3C05945F6B7BB5F6B1E0E3499 /* PryntTrimmerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PryntTrimmerView.modulemap; sourceTree = "<group>"; };
+		0A05DFCF100691CA8DC4278098FDB897 /* FLAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImage.m; path = FLAnimatedImage/FLAnimatedImage.m; sourceTree = "<group>"; };
+		0B081C82A83CCD6981CEC4B653D3AFC8 /* Pods-GifCreator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCreator.release.xcconfig"; sourceTree = "<group>"; };
+		0B5590112F3B6C9096DD4D281B1E3612 /* UIImage+BundleImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+BundleImage.h"; path = "YGCTrimVideoView/Classes/UIImage+BundleImage.h"; sourceTree = "<group>"; };
+		18FB140423310EB438BE5DFEA7DF1851 /* FLAnimatedImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLAnimatedImage.xcconfig; sourceTree = "<group>"; };
+		1BE20B9F8F54819C4ED02DACC14D2914 /* PryntTrimmerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PryntTrimmerView-umbrella.h"; sourceTree = "<group>"; };
+		2009D7C16ED11811A32AD3BA2F80738C /* PryntTrimmerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PryntTrimmerView-dummy.m"; sourceTree = "<group>"; };
+		275D438CF0C325FBD096131DF9EA0813 /* Regift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Regift.xcconfig; sourceTree = "<group>"; };
+		2C0A6F7642373DA0127E88BB6F0F80E5 /* Regift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Regift.h; path = Regift/Regift.h; sourceTree = "<group>"; };
+		2D969F36B7564BF835A0ADE8844A1DBD /* YGCThumbCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YGCThumbCollectionViewCell.m; path = YGCTrimVideoView/Classes/YGCThumbCollectionViewCell.m; sourceTree = "<group>"; };
+		3096E5A65FCE985DC810DAC1A5698987 /* YGCTrimVideoView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YGCTrimVideoView.xcconfig; sourceTree = "<group>"; };
+		3422E3B3F937630A0BB81EE1A75BB718 /* Pods-GifCreator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCreator-acknowledgements.plist"; sourceTree = "<group>"; };
+		4180EEDDDD4CD95E1E5543E73C4C6EDF /* Pods-GifCreator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCreator-umbrella.h"; sourceTree = "<group>"; };
+		42CFF921F4F0486815FE0B97945DB4C1 /* GIFGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFGenerator-prefix.pch"; sourceTree = "<group>"; };
+		4ABD925A9F30516840E1F8BF62F027B0 /* PryntTrimmerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PryntTrimmerView.xcconfig; sourceTree = "<group>"; };
+		4B424481F3B5752C70787C9BD69F3B42 /* Pods-GifCreator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCreator-frameworks.sh"; sourceTree = "<group>"; };
+		4EBCFEC3946FEB72409AC4DEEC9B8AB6 /* AVAssetTimeSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetTimeSelector.swift; path = PryntTrimmerView/Classes/Parents/AVAssetTimeSelector.swift; sourceTree = "<group>"; };
+		5254B5FF830F78AAEF5CBBB7C7E3F014 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		56244B02858292C46E78089451430CD7 /* Pods-GifCreator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCreator.debug.xcconfig"; sourceTree = "<group>"; };
+		56C9B4E61BF048384DEA062C5D1E3F69 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5881BE25BD532350089967F4943AD075 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		59CAD66A66D628F4BDE9D0D202814389 /* GIFGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GIFGenerator.modulemap; sourceTree = "<group>"; };
+		60B1CC06FAFDB73F2F9D359E5F45BB06 /* Regift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Regift-dummy.m"; sourceTree = "<group>"; };
+		61A07976CE8A7A7D58FC4F1114D6CFD1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		61BD25505BE303C76EFF8D3A6C6ED91E /* PryntTrimmerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PryntTrimmerView.swift; path = PryntTrimmerView/Classes/Trimmer/PryntTrimmerView.swift; sourceTree = "<group>"; };
+		627C37B94B45B210456A19B1A84CEBFA /* HandlerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HandlerView.swift; path = PryntTrimmerView/Classes/Trimmer/HandlerView.swift; sourceTree = "<group>"; };
+		641333DD2DA2EDC2CD46AB60DF40BDEE /* YGCTrimVideoView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YGCTrimVideoView-prefix.pch"; sourceTree = "<group>"; };
+		64B89ABD5B3C9C4FB48D7BD4AEF90B5B /* FLAnimatedImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FLAnimatedImage.modulemap; sourceTree = "<group>"; };
+		67950C9EC0B5EA97EE39872049284F9C /* Pods-GifCreator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCreator-resources.sh"; sourceTree = "<group>"; };
+		67FE6E7A34138A8CD0479506C4FAE311 /* UIView+YGCFrameUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YGCFrameUtil.h"; path = "YGCTrimVideoView/Classes/UIView+YGCFrameUtil.h"; sourceTree = "<group>"; };
+		6C2C21C3B5A366D10E860C437EA5BFC8 /* Pods-GifCreator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCreator-dummy.m"; sourceTree = "<group>"; };
+		6F4563F9DCF5B25F0284DFF6B744127D /* Regift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regift.swift; path = Regift/Regift.swift; sourceTree = "<group>"; };
+		712A09815B1B12D77BAF2F5DDD6DC236 /* CropMaskView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropMaskView.swift; path = PryntTrimmerView/Classes/Cropper/CropMaskView.swift; sourceTree = "<group>"; };
+		73A1C32FCB1801A9686F52EDD0885764 /* UIView+YGCFrameUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YGCFrameUtil.m"; path = "YGCTrimVideoView/Classes/UIView+YGCFrameUtil.m"; sourceTree = "<group>"; };
+		7537538368DD14DAE643F003431ADBFE /* defaultImage.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = defaultImage.bundle; path = YGCTrimVideoView/Assets/defaultImage.bundle; sourceTree = "<group>"; };
+		7DE9C6A13C416AF178F704D4D8B3AFEC /* YGCThumbCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGCThumbCollectionViewCell.h; path = YGCTrimVideoView/Classes/YGCThumbCollectionViewCell.h; sourceTree = "<group>"; };
+		814034B08C708535E8314CF88EE4AA00 /* YGCTrimVideoControlView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGCTrimVideoControlView.h; path = YGCTrimVideoView/Classes/YGCTrimVideoControlView.h; sourceTree = "<group>"; };
+		83A8A38211B74E331EE089CE36D9B63E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84ADDE4BFDCDFE08DB48BAD7E56C6ACC /* FLAnimatedImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-prefix.pch"; sourceTree = "<group>"; };
+		8D3EDFFDAD8E44A47F04236E61E571FA /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA0DC72C23F66C2A632250CED7504B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E6FDA7DB54DF0BD9B207EC002D9C348 /* VideoCropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoCropView.swift; path = PryntTrimmerView/Classes/Cropper/VideoCropView.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		968F27E244AC5F737AD14C09E671AC2F /* Regift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Regift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		969C300D3CA46ACE3B556066DE5635E9 /* YGCTrimVideoControlView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YGCTrimVideoControlView.m; path = YGCTrimVideoView/Classes/YGCTrimVideoControlView.m; sourceTree = "<group>"; };
+		971D2C9AD8439E50F44024A45EBC99C2 /* Pods-GifCreator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GifCreator.modulemap"; sourceTree = "<group>"; };
+		A04706125C8A0A604077EE9295788BE2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		A0622C47E9875566FE854146A333D783 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImageView.h; path = FLAnimatedImage/FLAnimatedImageView.h; sourceTree = "<group>"; };
+		A207F5E9852F9EEB735D6B2B99D030AC /* FLAnimatedImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImage-dummy.m"; sourceTree = "<group>"; };
+		A5BD1A1571E6C19A345AB3152B39371F /* Pods-GifCreator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCreator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AAA8C175855C304130BC9CB544827F30 /* Regift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Regift-umbrella.h"; sourceTree = "<group>"; };
+		AE92B3030989EC7934EBFF69F51D7D87 /* Regift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Regift-prefix.pch"; sourceTree = "<group>"; };
+		AE977A7C4AF2BB364E6304D02D8CB21E /* YGCTrimVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGCTrimVideoView.h; path = YGCTrimVideoView/Classes/YGCTrimVideoView.h; sourceTree = "<group>"; };
+		B4A995B5D171BE0B32D1854E4945ABB5 /* GIFGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GIFGenerator.xcconfig; sourceTree = "<group>"; };
+		BBF4983F8DDB355BDDB92F60AB07CA2A /* FLAnimatedImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-umbrella.h"; sourceTree = "<group>"; };
+		BC4EE0F595328280F1B8FCF98E145795 /* Regift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Regift.modulemap; sourceTree = "<group>"; };
+		C78CA657705034A36D5E591AB70FC11B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C8959A418BB635676A10AD0DF5A75043 /* ThumbSelectorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThumbSelectorView.swift; path = PryntTrimmerView/Classes/ThumbSelectorView.swift; sourceTree = "<group>"; };
+		C8FFCF624AD7561E0203DE4D6B6C20A8 /* PryntTrimmerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PryntTrimmerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEED646146605CA672CF099568F8C79B /* UIImage+BundleImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BundleImage.m"; path = "YGCTrimVideoView/Classes/UIImage+BundleImage.m"; sourceTree = "<group>"; };
+		D0B1021F3744F9AB6D59C9531DCD4A3C /* FLAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImage.h; path = FLAnimatedImage/FLAnimatedImage.h; sourceTree = "<group>"; };
+		D3DBE4AB89A9C1034302029E2DCAD3F8 /* GIFGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GIFGenerator-dummy.m"; sourceTree = "<group>"; };
+		D3DC68717D49666879538A12BE2F1CDE /* YGCTrimVideoView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YGCTrimVideoView-dummy.m"; sourceTree = "<group>"; };
+		D666FE9E24CB53917E3721795D44912E /* GIFGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFGenerator.swift; path = Pod/Classes/GIFGenerator.swift; sourceTree = "<group>"; };
+		D6ED79FAFAE7BD836B584E7A35252613 /* GIFGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFGenerator-umbrella.h"; sourceTree = "<group>"; };
+		E064051AB1F88E44C020D232C6A8B3A8 /* VideoScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoScrollView.swift; path = PryntTrimmerView/Classes/Cropper/VideoScrollView.swift; sourceTree = "<group>"; };
+		E200449D79E7DAA15DC76C73D6951365 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E436EE200DC86A362DB86B5C2514A578 /* YGCTrimVideoView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YGCTrimVideoView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB55E5C66C702A80D888DEBE4EFCFFED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB64FDB009D952F112269B760099D946 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImageView.m; path = FLAnimatedImage/FLAnimatedImageView.m; sourceTree = "<group>"; };
+		EC4BDA5128B54DB2F540E22DF8E8E452 /* Pods_GifCreator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifCreator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CAC5D6E5915CB95EC845FB99415410 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CEF5825FB2802C65A4EC0053A8C512 /* AssetVideoScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetVideoScrollView.swift; path = PryntTrimmerView/Classes/Parents/AssetVideoScrollView.swift; sourceTree = "<group>"; };
+		F58BB6487D9C415B01AB08CB8A167841 /* YGCTrimVideoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YGCTrimVideoView.m; path = YGCTrimVideoView/Classes/YGCTrimVideoView.m; sourceTree = "<group>"; };
+		FA307DEF08997D3F0D944F5D94FEE251 /* PryntTrimmerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PryntTrimmerView-prefix.pch"; sourceTree = "<group>"; };
+		FC9BCB4B126DC95D0AC027BCF0FCA854 /* AVAssetImageGeneratorTimePoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetImageGeneratorTimePoints.swift; path = Regift/AVAssetImageGeneratorTimePoints.swift; sourceTree = "<group>"; };
+		FD6D35CEDEE68643B5488E772E1954B7 /* YGCTrimVideoView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YGCTrimVideoView.modulemap; sourceTree = "<group>"; };
+		FEA9DE3FA8CDA61E0AD2410BC53D1640 /* GIFGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31F923AAEAE9FF2C76053E11F8C0C04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325ADD5B11E8B7E12B1DEEB25D6C7B59 /* AVFoundation.framework in Frameworks */,
+				0D572B1B41B9F7E3A6A3A57AE229F48F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C71CF445F3725E13BFDAC5D84B69C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A97BA1D8A2DDA4DDC4DF7C2878F6B6 /* CoreGraphics.framework in Frameworks */,
+				163DEFC11FEC2A8F71990079093EB790 /* Foundation.framework in Frameworks */,
+				5DC8C13B108C9BB872801AB07A520D0D /* ImageIO.framework in Frameworks */,
+				87CD9D328EC49DC3703F5C1A99E83C44 /* MobileCoreServices.framework in Frameworks */,
+				1BD28665B76986E6C76089DAE4061C79 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6561AF85DA48E1D6A5B25B7B7F605A84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D94938B76680EB356DD8171BF4DD29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949A0EA7C650B9EF78A0CBCBC01DDBA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E827ADEB965900A338232319FB3126 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C812211EFCF5D60BC6F1E2EE552EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D18B7826585577C7B8417BD41455F72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD328EF2191FD4B298B70EBA5E5ED06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B654B7B0F9D67089E75A16318264D1 /* Foundation.framework in Frameworks */,
+				23E99EC651B0407397308E6B8D66B400 /* ImageIO.framework in Frameworks */,
+				64E3F56E00F929AB1F4C0D86CFB18741 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03DBDBDF2CC3EFB24D1BB3970E6E54FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7537538368DD14DAE643F003431ADBFE /* defaultImage.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E716622E7BC25F2FE3900455B3225E0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F9AFA6830E59C5C6087B1B557961A12 /* PryntTrimmerView */ = {
+			isa = PBXGroup;
+			children = (
+				F4CEF5825FB2802C65A4EC0053A8C512 /* AssetVideoScrollView.swift */,
+				4EBCFEC3946FEB72409AC4DEEC9B8AB6 /* AVAssetTimeSelector.swift */,
+				712A09815B1B12D77BAF2F5DDD6DC236 /* CropMaskView.swift */,
+				627C37B94B45B210456A19B1A84CEBFA /* HandlerView.swift */,
+				61BD25505BE303C76EFF8D3A6C6ED91E /* PryntTrimmerView.swift */,
+				C8959A418BB635676A10AD0DF5A75043 /* ThumbSelectorView.swift */,
+				8E6FDA7DB54DF0BD9B207EC002D9C348 /* VideoCropView.swift */,
+				E064051AB1F88E44C020D232C6A8B3A8 /* VideoScrollView.swift */,
+				3006D90EA414853D8959236221EE5BED /* Support Files */,
+			);
+			path = PryntTrimmerView;
+			sourceTree = "<group>";
+		};
+		3006D90EA414853D8959236221EE5BED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83A8A38211B74E331EE089CE36D9B63E /* Info.plist */,
+				09CFCDD3C05945F6B7BB5F6B1E0E3499 /* PryntTrimmerView.modulemap */,
+				4ABD925A9F30516840E1F8BF62F027B0 /* PryntTrimmerView.xcconfig */,
+				2009D7C16ED11811A32AD3BA2F80738C /* PryntTrimmerView-dummy.m */,
+				FA307DEF08997D3F0D944F5D94FEE251 /* PryntTrimmerView-prefix.pch */,
+				1BE20B9F8F54819C4ED02DACC14D2914 /* PryntTrimmerView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PryntTrimmerView";
+			sourceTree = "<group>";
+		};
+		31A2F0088DD41C0598BBFEAF5EC0232A /* GIFGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				D666FE9E24CB53917E3721795D44912E /* GIFGenerator.swift */,
+				DFD38C3228EA11679A72A996F63DBCD0 /* Support Files */,
+			);
+			path = GIFGenerator;
+			sourceTree = "<group>";
+		};
+		477BC15B97724AEB96B7D2EE365C8FB1 /* Pods-GifCreator */ = {
+			isa = PBXGroup;
+			children = (
+				EB55E5C66C702A80D888DEBE4EFCFFED /* Info.plist */,
+				971D2C9AD8439E50F44024A45EBC99C2 /* Pods-GifCreator.modulemap */,
+				A5BD1A1571E6C19A345AB3152B39371F /* Pods-GifCreator-acknowledgements.markdown */,
+				3422E3B3F937630A0BB81EE1A75BB718 /* Pods-GifCreator-acknowledgements.plist */,
+				6C2C21C3B5A366D10E860C437EA5BFC8 /* Pods-GifCreator-dummy.m */,
+				4B424481F3B5752C70787C9BD69F3B42 /* Pods-GifCreator-frameworks.sh */,
+				67950C9EC0B5EA97EE39872049284F9C /* Pods-GifCreator-resources.sh */,
+				4180EEDDDD4CD95E1E5543E73C4C6EDF /* Pods-GifCreator-umbrella.h */,
+				56244B02858292C46E78089451430CD7 /* Pods-GifCreator.debug.xcconfig */,
+				0B081C82A83CCD6981CEC4B653D3AFC8 /* Pods-GifCreator.release.xcconfig */,
+			);
+			name = "Pods-GifCreator";
+			path = "Target Support Files/Pods-GifCreator";
+			sourceTree = "<group>";
+		};
+		4C0521D534C89622BC61B4AB93AF08E8 /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				D0B1021F3744F9AB6D59C9531DCD4A3C /* FLAnimatedImage.h */,
+				0A05DFCF100691CA8DC4278098FDB897 /* FLAnimatedImage.m */,
+				A0622C47E9875566FE854146A333D783 /* FLAnimatedImageView.h */,
+				EB64FDB009D952F112269B760099D946 /* FLAnimatedImageView.m */,
+				D3B4D279EAAF9F8EED7BC2A48E344020 /* Support Files */,
+			);
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		5A149FC1778037D63D42A66170EBF816 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E200449D79E7DAA15DC76C73D6951365 /* Info.plist */,
+				BC4EE0F595328280F1B8FCF98E145795 /* Regift.modulemap */,
+				275D438CF0C325FBD096131DF9EA0813 /* Regift.xcconfig */,
+				60B1CC06FAFDB73F2F9D359E5F45BB06 /* Regift-dummy.m */,
+				AE92B3030989EC7934EBFF69F51D7D87 /* Regift-prefix.pch */,
+				AAA8C175855C304130BC9CB544827F30 /* Regift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Regift";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				9DE1598F61B120A0F78161337B026FAE /* Pods */,
+				EB2C4F1DD4CAA6A8C3A806E850B474C8 /* Products */,
+				DEE0E83A675739212F9939F44C3DBC76 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E716622E7BC25F2FE3900455B3225E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A04706125C8A0A604077EE9295788BE2 /* AVFoundation.framework */,
+				5254B5FF830F78AAEF5CBBB7C7E3F014 /* CoreGraphics.framework */,
+				C78CA657705034A36D5E591AB70FC11B /* Foundation.framework */,
+				61A07976CE8A7A7D58FC4F1114D6CFD1 /* ImageIO.framework */,
+				083E930B77D2E3FE0340CB8C76DB8DDC /* MobileCoreServices.framework */,
+				5881BE25BD532350089967F4943AD075 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		940D52A4499743B2A2BCB8B4F8475516 /* Regift */ = {
+			isa = PBXGroup;
+			children = (
+				FC9BCB4B126DC95D0AC027BCF0FCA854 /* AVAssetImageGeneratorTimePoints.swift */,
+				2C0A6F7642373DA0127E88BB6F0F80E5 /* Regift.h */,
+				6F4563F9DCF5B25F0284DFF6B744127D /* Regift.swift */,
+				5A149FC1778037D63D42A66170EBF816 /* Support Files */,
+			);
+			path = Regift;
+			sourceTree = "<group>";
+		};
+		9DE1598F61B120A0F78161337B026FAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C0521D534C89622BC61B4AB93AF08E8 /* FLAnimatedImage */,
+				31A2F0088DD41C0598BBFEAF5EC0232A /* GIFGenerator */,
+				2F9AFA6830E59C5C6087B1B557961A12 /* PryntTrimmerView */,
+				940D52A4499743B2A2BCB8B4F8475516 /* Regift */,
+				C74C8DCF6FDDEA57CC20E8A79FCE266B /* YGCTrimVideoView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C74C8DCF6FDDEA57CC20E8A79FCE266B /* YGCTrimVideoView */ = {
+			isa = PBXGroup;
+			children = (
+				0B5590112F3B6C9096DD4D281B1E3612 /* UIImage+BundleImage.h */,
+				CEED646146605CA672CF099568F8C79B /* UIImage+BundleImage.m */,
+				67FE6E7A34138A8CD0479506C4FAE311 /* UIView+YGCFrameUtil.h */,
+				73A1C32FCB1801A9686F52EDD0885764 /* UIView+YGCFrameUtil.m */,
+				7DE9C6A13C416AF178F704D4D8B3AFEC /* YGCThumbCollectionViewCell.h */,
+				2D969F36B7564BF835A0ADE8844A1DBD /* YGCThumbCollectionViewCell.m */,
+				814034B08C708535E8314CF88EE4AA00 /* YGCTrimVideoControlView.h */,
+				969C300D3CA46ACE3B556066DE5635E9 /* YGCTrimVideoControlView.m */,
+				AE977A7C4AF2BB364E6304D02D8CB21E /* YGCTrimVideoView.h */,
+				F58BB6487D9C415B01AB08CB8A167841 /* YGCTrimVideoView.m */,
+				03DBDBDF2CC3EFB24D1BB3970E6E54FD /* Resources */,
+				DB350A336188AC5F3BFA0A8F9BCFCDDC /* Support Files */,
+			);
+			path = YGCTrimVideoView;
+			sourceTree = "<group>";
+		};
+		D3B4D279EAAF9F8EED7BC2A48E344020 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64B89ABD5B3C9C4FB48D7BD4AEF90B5B /* FLAnimatedImage.modulemap */,
+				18FB140423310EB438BE5DFEA7DF1851 /* FLAnimatedImage.xcconfig */,
+				A207F5E9852F9EEB735D6B2B99D030AC /* FLAnimatedImage-dummy.m */,
+				84ADDE4BFDCDFE08DB48BAD7E56C6ACC /* FLAnimatedImage-prefix.pch */,
+				BBF4983F8DDB355BDDB92F60AB07CA2A /* FLAnimatedImage-umbrella.h */,
+				F4CAC5D6E5915CB95EC845FB99415410 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FLAnimatedImage";
+			sourceTree = "<group>";
+		};
+		DB350A336188AC5F3BFA0A8F9BCFCDDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56C9B4E61BF048384DEA062C5D1E3F69 /* Info.plist */,
+				FD6D35CEDEE68643B5488E772E1954B7 /* YGCTrimVideoView.modulemap */,
+				3096E5A65FCE985DC810DAC1A5698987 /* YGCTrimVideoView.xcconfig */,
+				D3DC68717D49666879538A12BE2F1CDE /* YGCTrimVideoView-dummy.m */,
+				641333DD2DA2EDC2CD46AB60DF40BDEE /* YGCTrimVideoView-prefix.pch */,
+				05340DF530418B7483168E21C19C270D /* YGCTrimVideoView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YGCTrimVideoView";
+			sourceTree = "<group>";
+		};
+		DEE0E83A675739212F9939F44C3DBC76 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				477BC15B97724AEB96B7D2EE365C8FB1 /* Pods-GifCreator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DFD38C3228EA11679A72A996F63DBCD0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59CAD66A66D628F4BDE9D0D202814389 /* GIFGenerator.modulemap */,
+				B4A995B5D171BE0B32D1854E4945ABB5 /* GIFGenerator.xcconfig */,
+				D3DBE4AB89A9C1034302029E2DCAD3F8 /* GIFGenerator-dummy.m */,
+				42CFF921F4F0486815FE0B97945DB4C1 /* GIFGenerator-prefix.pch */,
+				D6ED79FAFAE7BD836B584E7A35252613 /* GIFGenerator-umbrella.h */,
+				8DA0DC72C23F66C2A632250CED7504B8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GIFGenerator";
+			sourceTree = "<group>";
+		};
+		EB2C4F1DD4CAA6A8C3A806E850B474C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D3EDFFDAD8E44A47F04236E61E571FA /* FLAnimatedImage.framework */,
+				FEA9DE3FA8CDA61E0AD2410BC53D1640 /* GIFGenerator.framework */,
+				EC4BDA5128B54DB2F540E22DF8E8E452 /* Pods_GifCreator.framework */,
+				C8FFCF624AD7561E0203DE4D6B6C20A8 /* PryntTrimmerView.framework */,
+				968F27E244AC5F737AD14C09E671AC2F /* Regift.framework */,
+				E436EE200DC86A362DB86B5C2514A578 /* YGCTrimVideoView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2E5F0A3ACB77270B981606B6DDF77BFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31BF0C4D6502E42EC2DFD030560EE034 /* PryntTrimmerView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5778A5F1420D38BAF7107A0AB3F4937C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9853D67453ECCD27480C197339298B /* Regift-umbrella.h in Headers */,
+				0624C2EE63C8785A57BA90887951C49E /* Regift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB0BEC354D94CD16B06E265F34E1213 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8C7BE384C73E81914E40624CB0CCEE /* Pods-GifCreator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E9C89A01F4B9D9D4B36AF6013ED083 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D3B4C1E379052E937203BE92BEA90C /* UIImage+BundleImage.h in Headers */,
+				6F47231C1610791876AC4FB22110539D /* UIView+YGCFrameUtil.h in Headers */,
+				BCA159980725EA65AEE92CFAC6391B96 /* YGCThumbCollectionViewCell.h in Headers */,
+				A5051EFD353CEAB809168C245495BD40 /* YGCTrimVideoControlView.h in Headers */,
+				B15EC92250F8C64024821EB7D563866F /* YGCTrimVideoView-umbrella.h in Headers */,
+				5D3A5F60432BA22E13304939571E3637 /* YGCTrimVideoView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965F77D30899394A2D24619A34F78103 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB9EC68E4B9247D20965D6D99F8CEA0 /* GIFGenerator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA64BDF07F033D7C01125C73FCCFEC87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879F3C72BF6A5122BA70CAEEDDC5B845 /* FLAnimatedImage-umbrella.h in Headers */,
+				ACEF52D266CBF9E8C7E9F7D5E2C0937A /* FLAnimatedImage.h in Headers */,
+				54B72BE8851E881007E5620B47F98A89 /* FLAnimatedImageView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06E4EFF2D5B8A270CA33829C042CC3FC /* PryntTrimmerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ADDD93202FA59EE708F3DF10EB07573 /* Build configuration list for PBXNativeTarget "PryntTrimmerView" */;
+			buildPhases = (
+				C08F19EA806C51754215787B47608FC4 /* Sources */,
+				98C812211EFCF5D60BC6F1E2EE552EFA /* Frameworks */,
+				2E5F0A3ACB77270B981606B6DDF77BFE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PryntTrimmerView;
+			productName = PryntTrimmerView;
+			productReference = C8FFCF624AD7561E0203DE4D6B6C20A8 /* PryntTrimmerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50804F7BAF0A67A18DA62FDFB991182A /* GIFGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9565E2A80E7B41AB148AA5B5698A8F4 /* Build configuration list for PBXNativeTarget "GIFGenerator" */;
+			buildPhases = (
+				099F0E666599E300D52C7ECC998FC2D8 /* Sources */,
+				9BD328EF2191FD4B298B70EBA5E5ED06 /* Frameworks */,
+				965F77D30899394A2D24619A34F78103 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIFGenerator;
+			productName = GIFGenerator;
+			productReference = FEA9DE3FA8CDA61E0AD2410BC53D1640 /* GIFGenerator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A87637FAD92BE631EFE8C0135BD708C /* Regift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B8CDC3B2A503EBCFC709FD48D9DD404 /* Build configuration list for PBXNativeTarget "Regift" */;
+			buildPhases = (
+				63BBFE952BAE697ACD15698C7FC9615B /* Sources */,
+				6561AF85DA48E1D6A5B25B7B7F605A84 /* Frameworks */,
+				5778A5F1420D38BAF7107A0AB3F4937C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Regift;
+			productName = Regift;
+			productReference = 968F27E244AC5F737AD14C09E671AC2F /* Regift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83B5B60C676A8D31829A6AE91CE86A75 /* FLAnimatedImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE17412EAFC0423EA482DB389779961 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */;
+			buildPhases = (
+				4AAEDB21198D433CF90C7195F1F02A6F /* Sources */,
+				5C71CF445F3725E13BFDAC5D84B69C3A /* Frameworks */,
+				FA64BDF07F033D7C01125C73FCCFEC87 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLAnimatedImage;
+			productName = FLAnimatedImage;
+			productReference = 8D3EDFFDAD8E44A47F04236E61E571FA /* FLAnimatedImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91CB4D6EDFF48DB0CAC5BB0E7E4D6C29 /* Pods-GifCreator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DEEC6A52F5568B29DE88FACD00026F3 /* Build configuration list for PBXNativeTarget "Pods-GifCreator" */;
+			buildPhases = (
+				E0991E2E5357347700E05C9669035E3F /* Sources */,
+				949A0EA7C650B9EF78A0CBCBC01DDBA8 /* Frameworks */,
+				5EB0BEC354D94CD16B06E265F34E1213 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				300ED82131CCE7488F4C9A70B278DCE0 /* PBXTargetDependency */,
+				F3F0B0A4A7B287ED7EE3FA176E020122 /* PBXTargetDependency */,
+				ADAF8637EE5E8CA3407CCD4C7E4A35A4 /* PBXTargetDependency */,
+				F745251F1D5FA5DB2BEC5AAF9D0F0D78 /* PBXTargetDependency */,
+				F02F626E3707CBBC48AEF91C8140909F /* PBXTargetDependency */,
+			);
+			name = "Pods-GifCreator";
+			productName = "Pods-GifCreator";
+			productReference = EC4BDA5128B54DB2F540E22DF8E8E452 /* Pods_GifCreator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D8BFDA67BFEB8EBE87BB107216BA78D /* YGCTrimVideoView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E470F3C8DA18B9FA99906E1C9A8A4E1 /* Build configuration list for PBXNativeTarget "YGCTrimVideoView" */;
+			buildPhases = (
+				8540331EA80584B5617B0D930D4C30E2 /* Sources */,
+				31F923AAEAE9FF2C76053E11F8C0C04A /* Frameworks */,
+				60E9C89A01F4B9D9D4B36AF6013ED083 /* Headers */,
+				BD7D4C4D6939D813055AAEA4A855B150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YGCTrimVideoView;
+			productName = YGCTrimVideoView;
+			productReference = E436EE200DC86A362DB86B5C2514A578 /* YGCTrimVideoView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EB2C4F1DD4CAA6A8C3A806E850B474C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83B5B60C676A8D31829A6AE91CE86A75 /* FLAnimatedImage */,
+				50804F7BAF0A67A18DA62FDFB991182A /* GIFGenerator */,
+				91CB4D6EDFF48DB0CAC5BB0E7E4D6C29 /* Pods-GifCreator */,
+				06E4EFF2D5B8A270CA33829C042CC3FC /* PryntTrimmerView */,
+				5A87637FAD92BE631EFE8C0135BD708C /* Regift */,
+				9D8BFDA67BFEB8EBE87BB107216BA78D /* YGCTrimVideoView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD7D4C4D6939D813055AAEA4A855B150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1F982792673A3CDCD9AB15C81698EA /* defaultImage.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		099F0E666599E300D52C7ECC998FC2D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AA9A88D7AB4CC20D810D952BCEDDA2 /* GIFGenerator-dummy.m in Sources */,
+				D112211A428D4D90FB919CBB752C5033 /* GIFGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AAEDB21198D433CF90C7195F1F02A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13ADE84F672E4DF94AB419484FFAEAFA /* FLAnimatedImage-dummy.m in Sources */,
+				8C1771BECC0DA6C28D8EB206F8D62D67 /* FLAnimatedImage.m in Sources */,
+				B6533EFF69AA9E2AB73837FD8950F1C8 /* FLAnimatedImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63BBFE952BAE697ACD15698C7FC9615B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA589B1B2A22C0349DE9C5F32C69F1B /* AVAssetImageGeneratorTimePoints.swift in Sources */,
+				880333098FAE9636741918302ABE0B8E /* Regift-dummy.m in Sources */,
+				E79229E4CE0D2BBBBF97B555D429CFB3 /* Regift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8540331EA80584B5617B0D930D4C30E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03438F853B352A1EF764120FBD76109 /* UIImage+BundleImage.m in Sources */,
+				1A0A8DB7807A114A3ADC08B8651F2C40 /* UIView+YGCFrameUtil.m in Sources */,
+				6C89FC1B37765617135683297EC75C3E /* YGCThumbCollectionViewCell.m in Sources */,
+				902EC308F131A0C71DDBE0F03D6EE2BE /* YGCTrimVideoControlView.m in Sources */,
+				1C117024C40ED8B805D55981B294D87E /* YGCTrimVideoView-dummy.m in Sources */,
+				1CF60861C292B136E93544C381B4F3A4 /* YGCTrimVideoView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C08F19EA806C51754215787B47608FC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B69B1D3187FD9D517106D93280D334 /* AssetVideoScrollView.swift in Sources */,
+				6B7BEE3E70BEF40E9249B6F5309AEB7B /* AVAssetTimeSelector.swift in Sources */,
+				CCC323BA6A4A873DED618185152ECB70 /* CropMaskView.swift in Sources */,
+				BC20F2EFACAF86940A2B16CFC3E3ABB3 /* HandlerView.swift in Sources */,
+				E1F51904D12232D74DCAFB6F1CF39D0E /* PryntTrimmerView-dummy.m in Sources */,
+				9FF0B6616F553347487E2D964EBCF944 /* PryntTrimmerView.swift in Sources */,
+				243BBD4420774ACEF3EAD7D3E8245BD9 /* ThumbSelectorView.swift in Sources */,
+				CF3EA62AF4A41F26208E685B13C28F56 /* VideoCropView.swift in Sources */,
+				E2BB960CC80802E3E7D47910E81E636B /* VideoScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0991E2E5357347700E05C9669035E3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A276929FC928CAC1473C48DA3B5B2FF3 /* Pods-GifCreator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		300ED82131CCE7488F4C9A70B278DCE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLAnimatedImage;
+			target = 83B5B60C676A8D31829A6AE91CE86A75 /* FLAnimatedImage */;
+			targetProxy = 681B08EC42BD4BF11B8E79BE8BA9CD25 /* PBXContainerItemProxy */;
+		};
+		ADAF8637EE5E8CA3407CCD4C7E4A35A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PryntTrimmerView;
+			target = 06E4EFF2D5B8A270CA33829C042CC3FC /* PryntTrimmerView */;
+			targetProxy = 01E2689367D5BBE1BDC094145D697CE5 /* PBXContainerItemProxy */;
+		};
+		F02F626E3707CBBC48AEF91C8140909F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YGCTrimVideoView;
+			target = 9D8BFDA67BFEB8EBE87BB107216BA78D /* YGCTrimVideoView */;
+			targetProxy = 31957D5ACD5B6FB1DEB84436319B6E20 /* PBXContainerItemProxy */;
+		};
+		F3F0B0A4A7B287ED7EE3FA176E020122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GIFGenerator;
+			target = 50804F7BAF0A67A18DA62FDFB991182A /* GIFGenerator */;
+			targetProxy = 21ACFD267E93EC2C686FDE81F5790CBD /* PBXContainerItemProxy */;
+		};
+		F745251F1D5FA5DB2BEC5AAF9D0F0D78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Regift;
+			target = 5A87637FAD92BE631EFE8C0135BD708C /* Regift */;
+			targetProxy = 1A6FEBE9A0283E7902B4C5CC1CADC81F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EB3C4451E68848C4D811793D6651EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 275D438CF0C325FBD096131DF9EA0813 /* Regift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Regift/Regift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Regift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Regift/Regift.modulemap";
+				PRODUCT_MODULE_NAME = Regift;
+				PRODUCT_NAME = Regift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45302ECF80F0072E32D9D537A373F8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B081C82A83CCD6981CEC4B653D3AFC8 /* Pods-GifCreator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GifCreator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GifCreator/Pods-GifCreator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B4690E5C4C81597B924B11E08F19498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18FB140423310EB438BE5DFEA7DF1851 /* FLAnimatedImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage.modulemap";
+				PRODUCT_MODULE_NAME = FLAnimatedImage;
+				PRODUCT_NAME = FLAnimatedImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6599B6AC63C64D65D4436F553CBD6E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A995B5D171BE0B32D1854E4945ABB5 /* GIFGenerator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GIFGenerator/GIFGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GIFGenerator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GIFGenerator/GIFGenerator.modulemap";
+				PRODUCT_MODULE_NAME = GIFGenerator;
+				PRODUCT_NAME = GIFGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9325FF874A34F949BDB19333950BE5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 275D438CF0C325FBD096131DF9EA0813 /* Regift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Regift/Regift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Regift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Regift/Regift.modulemap";
+				PRODUCT_MODULE_NAME = Regift;
+				PRODUCT_NAME = Regift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A66115CE6CAC62CBAE717D72C59093B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABD925A9F30516840E1F8BF62F027B0 /* PryntTrimmerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PryntTrimmerView/PryntTrimmerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PryntTrimmerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PryntTrimmerView/PryntTrimmerView.modulemap";
+				PRODUCT_MODULE_NAME = PryntTrimmerView;
+				PRODUCT_NAME = PryntTrimmerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ADDB386E1F25886730FE0C2ABA00AB1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56244B02858292C46E78089451430CD7 /* Pods-GifCreator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GifCreator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GifCreator/Pods-GifCreator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BAFB4155E9C0419B2E11B8F6915DB22B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3096E5A65FCE985DC810DAC1A5698987 /* YGCTrimVideoView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YGCTrimVideoView/YGCTrimVideoView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YGCTrimVideoView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YGCTrimVideoView/YGCTrimVideoView.modulemap";
+				PRODUCT_MODULE_NAME = YGCTrimVideoView;
+				PRODUCT_NAME = YGCTrimVideoView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCF75606A31E9010DE60E5210C23F70D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABD925A9F30516840E1F8BF62F027B0 /* PryntTrimmerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PryntTrimmerView/PryntTrimmerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PryntTrimmerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PryntTrimmerView/PryntTrimmerView.modulemap";
+				PRODUCT_MODULE_NAME = PryntTrimmerView;
+				PRODUCT_NAME = PryntTrimmerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D588B21D0E195A1DF4BDE52D285AC726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3096E5A65FCE985DC810DAC1A5698987 /* YGCTrimVideoView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YGCTrimVideoView/YGCTrimVideoView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YGCTrimVideoView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YGCTrimVideoView/YGCTrimVideoView.modulemap";
+				PRODUCT_MODULE_NAME = YGCTrimVideoView;
+				PRODUCT_NAME = YGCTrimVideoView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E44B0192A5951663C096613BE6DF8370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18FB140423310EB438BE5DFEA7DF1851 /* FLAnimatedImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage.modulemap";
+				PRODUCT_MODULE_NAME = FLAnimatedImage;
+				PRODUCT_NAME = FLAnimatedImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC610877F9068A0B1005ED524696D633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A995B5D171BE0B32D1854E4945ABB5 /* GIFGenerator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GIFGenerator/GIFGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GIFGenerator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GIFGenerator/GIFGenerator.modulemap";
+				PRODUCT_MODULE_NAME = GIFGenerator;
+				PRODUCT_NAME = GIFGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E470F3C8DA18B9FA99906E1C9A8A4E1 /* Build configuration list for PBXNativeTarget "YGCTrimVideoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D588B21D0E195A1DF4BDE52D285AC726 /* Debug */,
+				BAFB4155E9C0419B2E11B8F6915DB22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DEEC6A52F5568B29DE88FACD00026F3 /* Build configuration list for PBXNativeTarget "Pods-GifCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADDB386E1F25886730FE0C2ABA00AB1D /* Debug */,
+				45302ECF80F0072E32D9D537A373F8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE17412EAFC0423EA482DB389779961 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4690E5C4C81597B924B11E08F19498 /* Debug */,
+				E44B0192A5951663C096613BE6DF8370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ADDD93202FA59EE708F3DF10EB07573 /* Build configuration list for PBXNativeTarget "PryntTrimmerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF75606A31E9010DE60E5210C23F70D /* Debug */,
+				A66115CE6CAC62CBAE717D72C59093B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B8CDC3B2A503EBCFC709FD48D9DD404 /* Build configuration list for PBXNativeTarget "Regift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9325FF874A34F949BDB19333950BE5EE /* Debug */,
+				1EB3C4451E68848C4D811793D6651EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9565E2A80E7B41AB148AA5B5698A8F4 /* Build configuration list for PBXNativeTarget "GIFGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC610877F9068A0B1005ED524696D633 /* Debug */,
+				6599B6AC63C64D65D4436F553CBD6E82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

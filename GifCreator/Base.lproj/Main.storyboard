@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2vI-fG-WO3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Kek-vT-bWe">
+            <objects>
+                <navigationController id="2vI-fG-WO3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="DPl-R3-hvg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.83529411760000005" blue="0.039215686270000001" alpha="0.73555222600000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.83529411760000005" blue="0.039215686270000001" alpha="0.73555222600000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LdJ-Dz-kct"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2v-NY-7Cv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1108" y="128"/>
+        </scene>
+        <!--GIFthat-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="GifCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DiC-56-qws">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bfy-gZ-1px">
+                                    <size key="itemSize" width="84" height="84"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gifCell" id="5Zv-3d-Tbu" customClass="GifCell" customModule="GifCreator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8yf-0y-ZJL" customClass="FLAnimatedImageView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
+                                                    <gestureRecognizers/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="8yf-0y-ZJL" secondAttribute="trailing" id="0ki-uI-EsO"/>
+                                            <constraint firstAttribute="bottom" secondItem="8yf-0y-ZJL" secondAttribute="bottom" id="eQf-Qp-lb3"/>
+                                            <constraint firstItem="8yf-0y-ZJL" firstAttribute="top" secondItem="5Zv-3d-Tbu" secondAttribute="top" id="uln-Vt-pdn"/>
+                                            <constraint firstItem="8yf-0y-ZJL" firstAttribute="leading" secondItem="5Zv-3d-Tbu" secondAttribute="leading" id="yca-NN-Et8"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="gifImage" destination="8yf-0y-ZJL" id="6Jh-Q4-oDO"/>
+                                            <segue destination="wx0-MH-MJr" kind="show" identifier="detailSegue" id="3Tr-Zc-CRl"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="g4r-YQ-gnN">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <color key="color" red="1" green="0.83529411760000005" blue="0.039215686270000001" alpha="0.73555222600000003" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="DiC-56-qws" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Q3-bx-xWh"/>
+                            <constraint firstItem="g4r-YQ-gnN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hze-mP-it3"/>
+                            <constraint firstItem="DiC-56-qws" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SLi-md-uS3"/>
+                            <constraint firstItem="DiC-56-qws" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mrT-dh-tnN"/>
+                            <constraint firstItem="DiC-56-qws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pPZ-NE-sC5"/>
+                            <constraint firstItem="g4r-YQ-gnN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zZa-0N-gVD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pLq-Bk-V9I" appends="YES" id="5lh-RD-vIz"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="GIFthat" id="ixw-dd-sU5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SHs-jI-a4H">
+                            <color key="tintColor" red="1" green="0.83529411760000005" blue="0.039215686270000001" alpha="0.73555222600000003" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addNewGif:" destination="BYZ-38-t0r" id="IY9-dO-jFh"/>
+                                <segue destination="R1n-aj-GFL" kind="show" identifier="videoThumbSegue" id="Ey1-Cr-H9w"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="g4r-YQ-gnN" id="2Vv-Bv-Iz2"/>
+                        <outlet property="collectionView" destination="DiC-56-qws" id="d2J-8J-CbF"/>
+                        <outlet property="flowLayout" destination="bfy-gZ-1px" id="tyu-RZ-Gln"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer delaysTouchesBegan="YES" numberOfTapsRequired="2" id="pLq-Bk-V9I">
+                    <connections>
+                        <action selector="cellPressed:" destination="BYZ-38-t0r" id="Y3N-Je-Omr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-132" y="128"/>
+        </scene>
+        <!--Gif DetailVC-->
+        <scene sceneID="DJD-Pz-j6B">
+            <objects>
+                <viewController id="wx0-MH-MJr" customClass="GifDetailVC" customModule="GifCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ltC-CQ-jCx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="FRM-lc-wBb">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="LaB-Gq-JMB">
+                                        <connections>
+                                            <action selector="presentActivityController:" destination="wx0-MH-MJr" id="4OA-Cd-xji"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="1" green="0.83529411760000005" blue="0.039215686270000001" alpha="0.73555222600000003" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pVi-T3-kfR" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="pVi-T3-kfR" secondAttribute="width" multiplier="1:1" id="wcI-KD-ETZ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Nbn-WZ-4ZI" appends="YES" id="XdD-KQ-LRv"/>
+                                    <outletCollection property="gestureRecognizers" destination="gq6-TT-A5B" appends="YES" id="Xes-gN-ozD"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pVi-T3-kfR" firstAttribute="leading" secondItem="7t6-I6-uaH" secondAttribute="leading" constant="16" id="DDB-SG-Su9"/>
+                            <constraint firstItem="7t6-I6-uaH" firstAttribute="trailing" secondItem="pVi-T3-kfR" secondAttribute="trailing" constant="16" id="SwC-Yh-ydf"/>
+                            <constraint firstItem="pVi-T3-kfR" firstAttribute="centerY" secondItem="ltC-CQ-jCx" secondAttribute="centerY" id="dT5-01-zes"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7t6-I6-uaH"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailView" destination="pVi-T3-kfR" id="Gkr-4T-eWd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zlU-sN-OdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Nbn-WZ-4ZI">
+                    <connections>
+                        <action selector="handlePan:" destination="wx0-MH-MJr" id="oEV-7S-jL8"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="gq6-TT-A5B">
+                    <connections>
+                        <action selector="handleTaps:" destination="wx0-MH-MJr" id="ths-rU-Aho"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="572" y="-677.81109445277366"/>
+        </scene>
+        <!--Video DisplayVC-->
+        <scene sceneID="AEb-Ln-pWq">
+            <objects>
+                <viewController id="R1n-aj-GFL" customClass="VideoDisplayVC" customModule="GifCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Odq-rs-pea">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NXN-XL-CBK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PJT-aI-hii">
+                                    <size key="itemSize" width="100" height="106"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videoThumbCell" id="lCq-VX-QMp" customClass="VideoThumbCell" customModule="GifCreator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="106"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="106"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0oT-AL-TGG" customClass="GradientImage" customModule="GifCreator" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="106"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovK-S6-YvE">
+                                                    <rect key="frame" x="57.5" y="82" width="35.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0oT-AL-TGG" secondAttribute="trailing" id="8NL-E3-nAz"/>
+                                            <constraint firstItem="0oT-AL-TGG" firstAttribute="top" secondItem="lCq-VX-QMp" secondAttribute="top" id="D9b-39-wHO"/>
+                                            <constraint firstAttribute="trailing" secondItem="ovK-S6-YvE" secondAttribute="trailing" constant="7" id="Mm1-Hv-RdC"/>
+                                            <constraint firstAttribute="bottom" secondItem="ovK-S6-YvE" secondAttribute="bottom" constant="7" id="Z0j-3v-71h"/>
+                                            <constraint firstItem="0oT-AL-TGG" firstAttribute="leading" secondItem="lCq-VX-QMp" secondAttribute="leading" id="gcP-pP-fyj"/>
+                                            <constraint firstAttribute="bottom" secondItem="0oT-AL-TGG" secondAttribute="bottom" id="spK-7E-YDH"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="0oT-AL-TGG" id="iae-4u-Too"/>
+                                            <outlet property="videoTimeText" destination="ovK-S6-YvE" id="OR6-vk-dH0"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NXN-XL-CBK" firstAttribute="trailing" secondItem="33O-1b-BxT" secondAttribute="trailing" id="6KV-V0-gkn"/>
+                            <constraint firstItem="NXN-XL-CBK" firstAttribute="top" secondItem="33O-1b-BxT" secondAttribute="top" id="DGc-Xj-AuG"/>
+                            <constraint firstItem="NXN-XL-CBK" firstAttribute="leading" secondItem="33O-1b-BxT" secondAttribute="leading" id="Upx-xc-TVC"/>
+                            <constraint firstItem="NXN-XL-CBK" firstAttribute="bottom" secondItem="33O-1b-BxT" secondAttribute="bottom" id="nsI-IM-Dnz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="33O-1b-BxT"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="NXN-XL-CBK" id="ePg-Rs-nSM"/>
+                        <outlet property="flowLayout" destination="PJT-aI-hii" id="qbS-uS-T6k"/>
+                        <segue destination="tjf-jw-516" kind="show" identifier="trimSegue" id="hdt-oK-LJp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1n-ix-fqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="-463"/>
+        </scene>
+        <!--Trim-->
+        <scene sceneID="1ST-Eb-Hxj">
+            <objects>
+                <viewController id="tjf-jw-516" customClass="VideoCutter" customModule="GifCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Scw-VP-sZV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9d-gv-lrL" customClass="TrimmerView" customModule="PryntTrimmerView">
+                                <rect key="frame" x="16" y="529" width="343" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="OkQ-jd-gkk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1X5-3A-zJ9">
+                                <rect key="frame" x="16" y="76" width="343" height="445"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z9d-gv-lrL" firstAttribute="centerX" secondItem="Scw-VP-sZV" secondAttribute="centerX" id="4Tn-YO-qay"/>
+                            <constraint firstItem="Z9d-gv-lrL" firstAttribute="leading" secondItem="Orw-Qe-Tfm" secondAttribute="leading" constant="16" id="BcT-ES-Nqa"/>
+                            <constraint firstItem="Orw-Qe-Tfm" firstAttribute="bottom" secondItem="Z9d-gv-lrL" secondAttribute="bottom" constant="66" id="DOD-sE-kd9"/>
+                            <constraint firstItem="Orw-Qe-Tfm" firstAttribute="trailing" secondItem="1X5-3A-zJ9" secondAttribute="trailing" constant="16" id="EQM-Kb-feJ"/>
+                            <constraint firstItem="Z9d-gv-lrL" firstAttribute="top" secondItem="1X5-3A-zJ9" secondAttribute="bottom" constant="8" id="Ppx-xc-UDn"/>
+                            <constraint firstItem="Orw-Qe-Tfm" firstAttribute="trailing" secondItem="Z9d-gv-lrL" secondAttribute="trailing" constant="16" id="RqS-wJ-Tpt"/>
+                            <constraint firstItem="1X5-3A-zJ9" firstAttribute="leading" secondItem="Orw-Qe-Tfm" secondAttribute="leading" constant="16" id="XGI-YJ-B63"/>
+                            <constraint firstItem="1X5-3A-zJ9" firstAttribute="top" secondItem="Orw-Qe-Tfm" secondAttribute="top" constant="12" id="drn-9I-DSU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Orw-Qe-Tfm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trim" id="MqV-kt-1QL">
+                        <barButtonItem key="rightBarButtonItem" title="GifThat" id="945-hy-HZJ">
+                            <color key="tintColor" red="1" green="0.83529411760000005" blue="0.039215686270000001" alpha="0.73555222600000003" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="createGif:" destination="tjf-jw-516" id="RXY-ss-IB1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="trimmerView" destination="Z9d-gv-lrL" id="h37-XT-MyE"/>
+                        <outlet property="videoView" destination="1X5-3A-zJ9" id="FAn-2b-mcB"/>
+                        <segue destination="10Z-Nk-98d" kind="show" identifier="EditSegue" id="ome-Gt-z6S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELh-Jm-4Li" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2192.8000000000002" y="89.505247376311857"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="mE9-pC-ioT">
+            <objects>
+                <viewController id="10Z-Nk-98d" customClass="VideoEditingVC" customModule="GifCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gII-MC-zOg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="kHX-Kp-yux">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="1" green="0.83529411760000005" blue="0.039215686270000001" alpha="0.73555222600000003" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-X8-U5d" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="16" y="111" width="343" height="445"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BF1-Bf-18C"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="GrR-Ca-IQJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="uKE-tM-MV9">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="10Z-Nk-98d" id="Mqx-tE-xX5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="kHX-Kp-yux" id="qch-vP-pZc"/>
+                        <outlet property="gifView" destination="Rbu-X8-U5d" id="6l5-XG-d4S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVW-5m-hiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3116" y="-464"/>
+        </scene>
+    </scenes>
+</document>
