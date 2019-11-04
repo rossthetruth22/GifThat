@@ -3,6 +3,8 @@ Gif Creator!
 
 App that allows users to create and share animated GIFs
 
+Technologies Used: Swift, UIKit, PhotoKit, CocoaPods, Autolayout
+
 
 <img width="312" alt="15168" src="https://user-images.githubusercontent.com/31022402/47471094-cc939f80-d7d6-11e8-9306-77ef522dd19f.jpg">
 
